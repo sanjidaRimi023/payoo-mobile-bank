@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>payoo bank</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .outfit-font {
+      font-family: "Outfit", serif;
+      font-style: normal;
+    }
+  </style>
+</head>
+
+<body class="bg-slate-800 outfit-font">
+  <section class="max-w-md mx-auto max-h-screen py-6 bg-gray-100">
+    <header>
+      <nav class="flex justify-center items-center mt-6">
+        <div class=" mt-10 relative flex justify-center items-center w-9/12 mb-10">
+          <img class="absolute w-48" src="assets/Rectangle 1.png" alt="">
+          <img class="w-16" src="assets/bg.png" alt="">
+        </div>
+      </nav>
+    </header>
+    <!-- login section -->
+    <div>
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+          <form class="card-body">
+            <fieldset class="fieldset">
+              <label class="fieldset-label text-black font-bold">Mobile Number</label>
+
+              <input value="01953221550" id="mobile-number" type="number"
+                class="input border-none rounded-2xl bg-gray-200" placeholder="Enter your number" required />
+
+              <label class="fieldset-label text-black font-bold">4 Digit PIN</label>
+
+              <input value="1234" id="pin-number" type="text" class="input border-none rounded-2xl bg-gray-200"
+                placeholder="Enter 4 digit PIN" required />
+
+              <button id="login-btn" class="btn border rounded-2xl text-lg bg-blue-600 text-white mt-4">Login</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/login.js"></script>
+</body>
+
+</html>
